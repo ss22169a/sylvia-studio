@@ -168,17 +168,21 @@ ul {
 /* Dropdown */
 .dropdown {
   position: absolute;
-  top: calc(100% + 20px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-white);
-  border: 1px solid var(--color-gray-light);
-  border-radius: 12px;
+  padding-top: 20px; /* 空隙改成 padding，滑鼠不會中途離開觸發區 */
   min-width: 220px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.25s, transform 0.25s;
   transform: translateX(-50%) translateY(-8px);
+}
+
+.dropdown__inner {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.12);
   overflow: hidden;
 }
@@ -188,6 +192,12 @@ ul {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+/* 讓 item hover 時維持 focus */
+.nav__item:hover,
+.dropdown:hover {
+  z-index: 1000;
 }
 
 .dropdown__item {
