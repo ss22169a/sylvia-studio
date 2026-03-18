@@ -262,6 +262,13 @@ const TRANSLATIONS = {
   'oloo.c7.q':     { zh: '在法規灰色地帶運營的同時，我們如何建立可持續的商業模式？', en: 'How might we build a sustainable business model while operating in regulatory grey areas?' },
   'oloo.c7.text':  { zh: '與社群領袖合作推動自然成長——與學生會幹部、校園意見領袖及地方社群人士協作，驅動真實的使用者導入。', en: 'Community leader partnerships for organic growth — working with student council leaders, campus influencers, and local community figures to drive authentic adoption.' },
   'oloo.next':     { zh: '回到起點：BLANK SPACE →', en: 'Back to Start: BLANK SPACE →' },
+
+  // 機會與策略大標題
+  'bs.opp.title':    { zh: '六個機會，以及我如何回應它們', en: 'Six Opportunities & How I Addressed Them' },
+  'vvis.opp.title':  { zh: '五個機會，以及我如何回應它們', en: 'Five Opportunities & How I Addressed Them' },
+  'tellus.opp.title':{ zh: '四個機會，以及我如何回應它們', en: 'Four Opportunities & How I Addressed Them' },
+  'secux.opp.title': { zh: '六個機會，以及我如何回應它們', en: 'Six Opportunities & How I Addressed Them' },
+  'oloo.opp.title':  { zh: '七個機會，以及我如何回應它們', en: 'Seven Opportunities & How I Addressed Them' },
 };
 
 // ── Language Engine ──────────────────────────────────────────

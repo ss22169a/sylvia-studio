@@ -780,7 +780,7 @@ ul {
   font-size: 52px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--color-gray-mid);
+  color: #c8c8c8; /* 更淺的灰色 */
   position: absolute;
   top: 20px;
   right: 24px;
@@ -790,6 +790,7 @@ ul {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.01em;
+  color: var(--color-black); /* 正面文字統一黑色 */
 }
 
 .flip-card__back .flip-card__label {
@@ -799,12 +800,13 @@ ul {
   text-transform: uppercase;
   opacity: 0.5;
   margin-bottom: 12px;
+  color: var(--color-white); /* 背面標籤白色 */
 }
 
 .flip-card__question {
   font-size: 13px;
   line-height: 1.6;
-  color: rgba(255,255,255,0.75);
+  color: var(--color-gray-dark); /* 正面問題文字改為深灰/黑色 */
   margin-top: 12px;
 }
 
