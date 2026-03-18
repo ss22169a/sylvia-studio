@@ -323,7 +323,7 @@ ul {
 }
 
 .hero__title {
-  font-size: clamp(36px, 6vw, 80px);
+  font-size: clamp(28px, 4vw, 56px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -415,7 +415,7 @@ ul {
 }
 
 .section__title {
-  font-size: clamp(28px, 4vw, 52px);
+  font-size: clamp(22px, 3vw, 40px);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -676,7 +676,7 @@ ul {
 }
 
 .project-hero__title {
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(26px, 3.5vw, 48px);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -780,7 +780,7 @@ ul {
 }
 
 .contact-hero__title {
-  font-size: clamp(36px, 6vw, 72px);
+  font-size: clamp(28px, 4vw, 54px);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -843,7 +843,7 @@ ul {
 }
 
 .footer__statement {
-  font-size: clamp(32px, 6vw, 80px);
+  font-size: clamp(26px, 4vw, 56px);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -1041,7 +1041,7 @@ ul {
 }
 
 .about-intro {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(22px, 3vw, 36px);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.15;
