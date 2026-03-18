@@ -20,10 +20,10 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Sylvia.Studio</a>
       <ul class="nav__menu">
-        <li class="nav__item"><a href="about.html" class="nav__link">關於我</a></li>
-        <li class="nav__item"><a href="resume.html" class="nav__link">履歷</a></li>
+        <li class="nav__item"><a href="about.html" class="nav__link" data-i18n="nav.about">關於我</a></li>
+        <li class="nav__item"><a href="resume.html" class="nav__link" data-i18n="nav.resume">履歷</a></li>
         <li class="nav__item">
-          <span class="nav__link">工作經歷 ▾</span>
+          <span class="nav__link" data-i18n="nav.work">工作經歷 ▾</span>
           <div class="dropdown">
             <div class="dropdown__inner">
             <a href="work/blank-space.html" class="dropdown__item">BLANK SPACE</a>
@@ -34,7 +34,17 @@
                       </div>
           </div>
         </li>
-        <li class="nav__item"><a href="contact.html" class="nav__cta">Let's Talk</a></li>
+        <li class="nav__item nav__item--lang">
+          <button id="lang-toggle" class="lang-toggle" aria-label="切換語言">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="lang-toggle__label">EN</span>
+          </button>
+        </li>
+        <li class="nav__item"><a href="contact.html" class="nav__cta" data-i18n="nav.contact">Let's Talk</a></li>
       </ul>
       <button class="hamburger" aria-label="開啟選單">
         <span></span><span></span><span></span>
@@ -45,8 +55,8 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <button class="mobile-menu__close" aria-label="關閉選單">✕</button>
-    <a href="about.html">關於我</a>
-    <a href="resume.html">履歷</a>
+    <a href="about.html" data-i18n="mobile.about">關於我</a>
+    <a href="resume.html" data-i18n="mobile.resume">履歷</a>
     <div class="mobile-sub">
       <a href="work/blank-space.html">BLANK SPACE</a>
       <a href="work/vvis-studio.html">vvis.studio</a>
@@ -54,18 +64,18 @@
       <a href="work/secux.html">SecuX 科技</a>
       <a href="work/oloo.html">oloo 電動滑板車</a>
     </div>
-    <a href="contact.html">Let's Talk</a>
+    <a href="contact.html" data-i18n="mobile.contact">Let's Talk</a>
   </div>
 
   <!-- Hero -->
   <section style="min-height:100vh; display:flex; align-items:center; padding:calc(var(--nav-height) + 40px) 40px 80px; max-width:var(--max-width); margin:0 auto;">
     <div class="hero__content">
-      <p class="hero__eyebrow reveal">Product Marketing · Digital Strategy · Growth Marketing</p>
-      <h1 class="hero__title reveal reveal-delay-1">Driving Measurable<br>Growth Through<br>Digital Strategy</h1>
-      <p class="hero__subtitle reveal reveal-delay-2">Combining SEO, analytics (GA4), campaign execution, and cross-functional collaboration to deliver measurable results across every stage of growth.</p>
+      <p class="hero__eyebrow reveal" data-i18n="index.eyebrow">產品行銷 · 數位策略 · 成長行銷</p>
+      <h1 class="hero__title reveal reveal-delay-1" data-i18n="index.hero">以數位策略<br>驅動可衡量的成長</h1>
+      <p class="hero__subtitle reveal reveal-delay-2" data-i18n="index.subtitle">結合 SEO、數據分析（GA4）、行銷活動執行與跨部門協作，在每個成長階段都能交付可量化的成果。</p>
       <div class="hero__actions reveal reveal-delay-3">
-        <a href="work/blank-space.html" class="btn-primary">查看作品</a>
-        <a href="contact.html" class="btn-secondary">聯絡我</a>
+        <a href="work/blank-space.html" class="btn-primary" data-i18n="index.cta1">查看作品</a>
+        <a href="contact.html" class="btn-secondary" data-i18n="index.cta2">聯絡我</a>
       </div>
     </div>
   </section>
@@ -74,23 +84,23 @@
 
   <!-- Competency Grid -->
   <div class="section">
-    <p class="section__label reveal">核心專業</p>
-    <h2 class="section__title reveal reveal-delay-1" style="margin-bottom:60px;">What I Bring to the Table</h2>
+    <p class="section__label reveal" data-i18n="index.core.label">核心專業</p>
+    <h2 class="section__title reveal reveal-delay-1" style="margin-bottom:60px;" data-i18n="index.core.title">我能為你帶來什麼</h2>
     <div class="competency-grid">
       <div class="competency-item reveal">
         <p class="competency-item__num">01</p>
-        <h3 class="competency-item__title">Brand & Market Leadership</h3>
-        <p class="competency-item__body">Co-founded and scaled BLANK SPACE from zero to five physical retail stores in Taiwan, building brand identity, marketing systems, and customer loyalty programs from the ground up.</p>
+        <h3 class="competency-item__title" data-i18n="index.core1.title">品牌與市場領導力</h3>
+        <p class="competency-item__body" data-i18n="index.core1.body">從零開始共同創立 BLANK SPACE，擴展至台灣五家實體門市，從品牌識別、行銷系統到顧客忠誠計畫全程主導。</p>
       </div>
       <div class="competency-item reveal reveal-delay-1">
         <p class="competency-item__num">02</p>
-        <h3 class="competency-item__title">Digital & Product Strategy</h3>
-        <p class="competency-item__body">Deep expertise in Shopify and WordPress ecosystems — from architecture to content strategy to SEO — enabling B2B and B2C brands to build high-converting digital presences.</p>
+        <h3 class="competency-item__title" data-i18n="index.core2.title">數位與產品策略</h3>
+        <p class="competency-item__body" data-i18n="index.core2.body">深度掌握 Shopify 與 WordPress 生態系——從架構規劃、內容策略到 SEO 優化，協助 B2B 與 B2C 品牌打造高轉換率的數位形象。</p>
       </div>
       <div class="competency-item reveal reveal-delay-2">
         <p class="competency-item__num">03</p>
-        <h3 class="competency-item__title">Performance & Growth Execution</h3>
-        <p class="competency-item__body">Data-first approach using GA4, paid media, EDM, and SEO to drive measurable outcomes — reducing CAC, growing organic traffic, and improving conversion rates across channels.</p>
+        <h3 class="competency-item__title" data-i18n="index.core3.title">績效與成長執行力</h3>
+        <p class="competency-item__body" data-i18n="index.core3.body">以數據為核心，運用 GA4、付費媒體、EDM 與 SEO 驅動可衡量的成果——降低 CAC、提升自然流量、改善各渠道轉換率。</p>
       </div>
     </div>
   </div>
@@ -98,8 +108,8 @@
   <!-- Work Preview -->
   <div class="section--dark">
     <div class="section__inner">
-      <p class="section__label reveal">工作經歷</p>
-      <h2 class="section__title reveal reveal-delay-1" style="color:#fff; margin-bottom:60px;">Selected Work</h2>
+      <p class="section__label reveal" data-i18n="index.work.label">工作經歷</p>
+      <h2 class="section__title reveal reveal-delay-1" style="color:#fff; margin-bottom:60px;" data-i18n="index.work.title">精選作品</h2>
       <div class="work-preview">
         <a href="work/blank-space.html" class="work-item reveal">
           <img
@@ -143,36 +153,36 @@
       </div>
 
       <div style="text-align:center; margin-top:60px;">
-        <a href="resume.html" class="btn-secondary" style="color:#fff; border-color:rgba(255,255,255,0.4);">查看完整履歷</a>
+        <a href="resume.html" class="btn-secondary" style="color:#fff; border-color:rgba(255,255,255,0.4);" data-i18n="index.work.resume">查看完整履歷</a>
       </div>
     </div>
   </div>
 
   <!-- CTA -->
   <div class="section" style="text-align:center;">
-    <h2 class="section__title reveal" style="font-size:clamp(26px,3.5vw,46px); max-width:600px; margin:0 auto 24px;">Have an idea?<br>Let's bring it to life.</h2>
-    <p class="section__body reveal reveal-delay-1" style="margin:0 auto 48px; text-align:center;">Whether you're launching a new product, refining your strategy, or building something people love — I'd love to hear about it.</p>
-    <a href="contact.html" class="btn-primary reveal reveal-delay-2">Get in touch →</a>
+    <h2 class="section__title reveal" style="font-size:clamp(26px,3.5vw,46px); max-width:600px; margin:0 auto 24px;" data-i18n="index.cta.title">有想法嗎？<br>讓我們一起實現它。</h2>
+    <p class="section__body reveal reveal-delay-1" style="margin:0 auto 48px; text-align:center;" data-i18n="index.cta.body">無論你正在推出新產品、優化策略，或是打造令人喜愛的東西——我很樂意聽你說。</p>
+    <a href="contact.html" class="btn-primary reveal reveal-delay-2" data-i18n="index.cta.btn">立即聯繫 →</a>
   </div>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__statement reveal">Work together,<br>make it happen</p>
+      <p class="footer__statement reveal" data-i18n="footer.statement">攜手合作，<br>讓它成真</p>
       <div class="footer__grid">
         <div>
           <p class="footer__brand">Sylvia.Studio</p>
-          <p class="footer__copy">© 2026 Sylvia Studio. All rights reserved.</p>
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Sylvia Studio. 版權所有。</p>
         </div>
         <div>
-          <p class="footer__nav-title">Menu</p>
+          <p class="footer__nav-title" data-i18n="footer.menu">選單</p>
           <ul class="footer__nav-list">
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
           </ul>
         </div>
         <div>
-          <p class="footer__nav-title">Work</p>
+          <p class="footer__nav-title" data-i18n="footer.work">作品</p>
           <ul class="footer__nav-list">
             <li><a href="work/blank-space.html">BLANK SPACE</a></li>
             <li><a href="work/vvis-studio.html">vvis.studio</a></li>
@@ -187,5 +197,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

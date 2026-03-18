@@ -219,6 +219,47 @@ ul {
   padding-left: 28px;
 }
 
+/* Language Toggle */
+.nav__item--lang {
+  display: flex;
+  align-items: center;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1.5px solid currentColor;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: var(--color-black);
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.lang-toggle:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.nav.scrolled .lang-toggle {
+  color: var(--color-white);
+}
+
+.nav.scrolled .lang-toggle:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.lang-toggle svg {
+  flex-shrink: 0;
+}
+
 /* Hamburger */
 .hamburger {
   display: none;

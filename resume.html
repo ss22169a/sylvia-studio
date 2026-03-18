@@ -19,10 +19,10 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Sylvia.Studio</a>
       <ul class="nav__menu">
-        <li class="nav__item"><a href="about.html" class="nav__link">關於我</a></li>
-        <li class="nav__item"><a href="resume.html" class="nav__link">履歷</a></li>
+        <li class="nav__item"><a href="about.html" class="nav__link" data-i18n="nav.about">關於我</a></li>
+        <li class="nav__item"><a href="resume.html" class="nav__link" data-i18n="nav.resume">履歷</a></li>
         <li class="nav__item">
-          <span class="nav__link">工作經歷 ▾</span>
+          <span class="nav__link" data-i18n="nav.work">工作經歷 ▾</span>
           <div class="dropdown">
             <div class="dropdown__inner">
             <a href="work/blank-space.html" class="dropdown__item">BLANK SPACE</a>
@@ -33,7 +33,17 @@
                       </div>
           </div>
         </li>
-        <li class="nav__item"><a href="contact.html" class="nav__cta">Let's Talk</a></li>
+        <li class="nav__item nav__item--lang">
+          <button id="lang-toggle" class="lang-toggle" aria-label="切換語言">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="lang-toggle__label">EN</span>
+          </button>
+        </li>
+        <li class="nav__item"><a href="contact.html" class="nav__cta" data-i18n="nav.contact">Let's Talk</a></li>
       </ul>
       <button class="hamburger" aria-label="開啟選單">
         <span></span><span></span><span></span>
@@ -43,8 +53,8 @@
 
   <div class="mobile-menu">
     <button class="mobile-menu__close" aria-label="關閉選單">✕</button>
-    <a href="about.html">關於我</a>
-    <a href="resume.html">履歷</a>
+    <a href="about.html" data-i18n="mobile.about">關於我</a>
+    <a href="resume.html" data-i18n="mobile.resume">履歷</a>
     <div class="mobile-sub">
       <a href="work/blank-space.html">BLANK SPACE</a>
       <a href="work/vvis-studio.html">vvis.studio</a>
@@ -52,16 +62,16 @@
       <a href="work/secux.html">SecuX 科技</a>
       <a href="work/oloo.html">oloo 電動滑板車</a>
     </div>
-    <a href="contact.html">Let's Talk</a>
+    <a href="contact.html" data-i18n="mobile.contact">Let's Talk</a>
   </div>
 
   <!-- Hero -->
   <div style="padding: calc(var(--nav-height) + 60px) 40px 80px; max-width:var(--max-width); margin:0 auto; border-bottom:1px solid var(--color-gray-light);">
     <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:40px; flex-wrap:wrap;">
       <div style="max-width:700px;">
-        <p class="section__label reveal">Resume</p>
-        <h1 style="font-size:clamp(26px,3.5vw,48px); font-weight:700; letter-spacing:-0.03em; line-height:1.1; margin-bottom:24px;" class="reveal reveal-delay-1">
-          I work across industries at the intersection of product, design, and marketing.
+        <p class="section__label reveal" data-i18n="resume.label">履歷</p>
+        <h1 style="font-size:clamp(26px,3.5vw,48px); font-weight:700; letter-spacing:-0.03em; line-height:1.1; margin-bottom:24px;" class="reveal reveal-delay-1" data-i18n="resume.hero">
+          用數據說話，<br>用策略驅動成長
         </h1>
         <p style="font-size:16px; line-height:1.8; color:var(--color-gray-dark); margin-bottom:32px;" class="reveal reveal-delay-2">
           My focus is understanding constraints, aligning teams, and turning complexity into clear, executable solutions.
@@ -207,21 +217,21 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__statement reveal">Work together,<br>make it happen</p>
+      <p class="footer__statement reveal" data-i18n="footer.statement">攜手合作，<br>讓它成真</p>
       <div class="footer__grid">
         <div>
           <p class="footer__brand">Sylvia.Studio</p>
-          <p class="footer__copy">© 2026 Sylvia Studio. All rights reserved.</p>
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Sylvia Studio. 版權所有。</p>
         </div>
         <div>
-          <p class="footer__nav-title">Menu</p>
+          <p class="footer__nav-title" data-i18n="footer.menu">選單</p>
           <ul class="footer__nav-list">
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
           </ul>
         </div>
         <div>
-          <p class="footer__nav-title">Work</p>
+          <p class="footer__nav-title" data-i18n="footer.work">作品</p>
           <ul class="footer__nav-list">
             <li><a href="work/blank-space.html">BLANK SPACE</a></li>
             <li><a href="work/vvis-studio.html">vvis.studio</a></li>
@@ -236,5 +246,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

@@ -19,10 +19,10 @@
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">Sylvia.Studio</a>
       <ul class="nav__menu">
-        <li class="nav__item"><a href="../about.html" class="nav__link">關於我</a></li>
-        <li class="nav__item"><a href="../resume.html" class="nav__link">履歷</a></li>
+        <li class="nav__item"><a href="../about.html" class="nav__link" data-i18n="nav.about">關於我</a></li>
+        <li class="nav__item"><a href="../resume.html" class="nav__link" data-i18n="nav.resume">履歷</a></li>
         <li class="nav__item">
-          <span class="nav__link">工作經歷 ▾</span>
+          <span class="nav__link" data-i18n="nav.work">工作經歷 ▾</span>
           <div class="dropdown">
             <div class="dropdown__inner">
             <a href="blank-space.html" class="dropdown__item">BLANK SPACE</a>
@@ -33,7 +33,17 @@
                       </div>
           </div>
         </li>
-        <li class="nav__item"><a href="../contact.html" class="nav__cta">Let's Talk</a></li>
+        <li class="nav__item nav__item--lang">
+          <button id="lang-toggle" class="lang-toggle" aria-label="切換語言">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="lang-toggle__label">EN</span>
+          </button>
+        </li>
+        <li class="nav__item"><a href="../contact.html" class="nav__cta" data-i18n="nav.contact">Let's Talk</a></li>
       </ul>
       <button class="hamburger" aria-label="開啟選單">
         <span></span><span></span><span></span>
@@ -43,8 +53,8 @@
 
   <div class="mobile-menu">
     <button class="mobile-menu__close" aria-label="關閉選單">✕</button>
-    <a href="../about.html">關於我</a>
-    <a href="../resume.html">履歷</a>
+    <a href="../about.html" data-i18n="mobile.about">關於我</a>
+    <a href="../resume.html" data-i18n="mobile.resume">履歷</a>
     <div class="mobile-sub">
       <a href="blank-space.html">BLANK SPACE</a>
       <a href="vvis-studio.html">vvis.studio</a>
@@ -52,7 +62,7 @@
       <a href="secux.html">SecuX 科技</a>
       <a href="oloo.html">oloo 電動滑板車</a>
     </div>
-    <a href="../contact.html">Let's Talk</a>
+    <a href="../contact.html" data-i18n="mobile.contact">Let's Talk</a>
   </div>
 
   <!-- Project Hero -->
@@ -84,7 +94,7 @@
   <div class="section">
     <div class="grid-2">
       <div>
-        <p class="section__label reveal">Overview</p>
+        <p class="section__label reveal" data-i18n="work.overview.label">概覽</p>
         <h2 class="section__title reveal reveal-delay-1">Building Digital Credibility for a B2B Translation Services Company</h2>
       </div>
       <div>
@@ -101,7 +111,7 @@
   <!-- Opportunities -->
   <div class="section--dark">
     <div class="section__inner">
-      <p class="section__label reveal">Opportunities &amp; Approach</p>
+      <p class="section__label reveal" data-i18n="work.opp.label">機會與策略</p>
       <h2 class="section__title reveal reveal-delay-1" style="color:#fff; margin-bottom:60px;">Five Opportunities &amp; How I Addressed Them</h2>
 
       <div class="flip-cards">
@@ -113,7 +123,7 @@
               <p class="flip-card__question">How might we establish trust in a competitive translation market by showcasing deep industry expertise across multiple technical sectors?</p>
             </div>
             <div class="flip-card__back" style="background:#fff;">
-              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;">Approach</p>
+              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;" data-i18n="work.approach.back">策略</p>
               <p class="flip-card__text" style="color:#333;">Established trust through showcasing technical expertise across six industry verticals with specialized, authoritative content that demonstrated domain knowledge.</p>
             </div>
           </div>
@@ -127,7 +137,7 @@
               <p class="flip-card__question">How might we improve organic search visibility for highly specific technical translation services and capture valuable inbound leads?</p>
             </div>
             <div class="flip-card__back" style="background:#fff;">
-              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;">Approach</p>
+              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;" data-i18n="work.approach.back">策略</p>
               <p class="flip-card__text" style="color:#333;">Implemented targeted SEO strategies for technical keywords in each vertical, improving organic visibility for high-intent B2B search queries.</p>
             </div>
           </div>
@@ -141,7 +151,7 @@
               <p class="flip-card__question">How might we streamline the client acquisition journey from first visit to inquiry submission with minimal friction?</p>
             </div>
             <div class="flip-card__back" style="background:#fff;">
-              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;">Approach</p>
+              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;" data-i18n="work.approach.back">策略</p>
               <p class="flip-card__text" style="color:#333;">Streamlined client acquisition through context-aware CTAs, gated content, newsletter segmentation, and GA4 tracking to identify high-converting pathways.</p>
             </div>
           </div>
@@ -155,7 +165,7 @@
               <p class="flip-card__question">How might we maintain a bilingual website that exemplifies translation quality and reinforces our core value proposition?</p>
             </div>
             <div class="flip-card__back" style="background:#fff;">
-              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;">Approach</p>
+              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;" data-i18n="work.approach.back">策略</p>
               <p class="flip-card__text" style="color:#333;">Designed bilingual (Chinese/English) user experiences that maintained quality and consistency across both languages without sacrificing depth or nuance.</p>
             </div>
           </div>
@@ -169,13 +179,13 @@
               <p class="flip-card__question">How might we keep content relevant across diverse industries with sustainable update strategies that maintain SEO rankings?</p>
             </div>
             <div class="flip-card__back" style="background:#fff;">
-              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;">Approach</p>
+              <p class="flip-card__back flip-card__label" style="color:#333; opacity:0.5;" data-i18n="work.approach.back">策略</p>
               <p class="flip-card__text" style="color:#333;">Built sustainable content strategies and editorial calendars that enabled consistent publishing without requiring constant high-effort production.</p>
             </div>
           </div>
         </div>
       </div>
-      <p style="font-size:13px; color:rgba(255,255,255,0.3); margin-top:20px; text-align:center;">Hover over each card to see the approach</p>
+      <p style="font-size:13px; color:rgba(255,255,255,0.3); margin-top:20px; text-align:center;" data-i18n="work.opp.hint">將滑鼠移至卡片上查看策略</p>
     </div>
   </div>
 
@@ -210,21 +220,21 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__statement reveal">Work together,<br>make it happen</p>
+      <p class="footer__statement reveal" data-i18n="footer.statement">攜手合作，<br>讓它成真</p>
       <div class="footer__grid">
         <div>
           <p class="footer__brand">Sylvia.Studio</p>
-          <p class="footer__copy">© 2026 Sylvia Studio. All rights reserved.</p>
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Sylvia Studio. 版權所有。</p>
         </div>
         <div>
-          <p class="footer__nav-title">Menu</p>
+          <p class="footer__nav-title" data-i18n="footer.menu">選單</p>
           <ul class="footer__nav-list">
             <li><a href="../about.html">About</a></li>
             <li><a href="../resume.html">Resume</a></li>
           </ul>
         </div>
         <div>
-          <p class="footer__nav-title">Work</p>
+          <p class="footer__nav-title" data-i18n="footer.work">作品</p>
           <ul class="footer__nav-list">
             <li><a href="blank-space.html">BLANK SPACE</a></li>
             <li><a href="vvis-studio.html">vvis.studio</a></li>
@@ -239,5 +249,6 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>
