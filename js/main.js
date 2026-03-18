@@ -99,6 +99,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // --- Analytics Accordion ---
+  document.querySelectorAll('.acc-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.closest('.acc-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.acc-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.acc-header').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        header.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   // --- Active nav link ---
   const currentPath = window.location.pathname;
   document.querySelectorAll('.nav__link, .dropdown__item').forEach(link => {

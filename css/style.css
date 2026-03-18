@@ -817,6 +817,88 @@ ul {
 }
 
 /* =============================================
+   ANALYTICS ACCORDION
+   ============================================= */
+.analytics-accordion {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.acc-item {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.acc-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+
+.acc-header:hover { color: rgba(255,255,255,0.7); }
+
+.acc-chevron {
+  flex-shrink: 0;
+  transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+  opacity: 0.5;
+}
+
+.acc-item.open .acc-chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.acc-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+  overflow: hidden;
+}
+
+.acc-item.open .acc-body { grid-template-rows: 1fr; }
+
+.acc-body > div { overflow: hidden; }
+
+.acc-section { padding: 0 0 32px; }
+
+.acc-section + .acc-section {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 32px;
+}
+
+.acc-section__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 16px;
+}
+
+.acc-section__text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.75);
+}
+
+.acc-section__text strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* =============================================
    CONTACT
    ============================================= */
 .contact-hero {

@@ -263,6 +263,21 @@ const TRANSLATIONS = {
   'oloo.c7.text':  { zh: '與社群領袖合作推動自然成長——與學生會幹部、校園意見領袖及地方社群人士協作，驅動真實的使用者導入。', en: 'Community leader partnerships for organic growth — working with student council leaders, campus influencers, and local community figures to drive authentic adoption.' },
   'oloo.next':     { zh: '回到起點：BLANK SPACE →', en: 'Back to Start: BLANK SPACE →' },
 
+  // Marketing Analytics
+  'bs.analytics.label':      { zh: '行銷數據分析', en: 'Marketing Analytics' },
+  'bs.analytics.title':      { zh: '行銷數據分析策略', en: 'Marketing Analytics Approach' },
+  'bs.analytics.desc':       { zh: '所有行銷決策皆以三項核心指標為基礎進行規劃與優化：網站轉換率、觸及 / 流量、社群擴散。', en: 'All marketing initiatives were planned and optimized based on three core metrics: website conversion rate, reach/traffic, and social amplification.' },
+  'bs.analytics.m1':         { zh: '網站轉換率', en: 'Website Conversion Rate' },
+  'bs.analytics.m2':         { zh: '觸及 / 流量', en: 'Reach / Traffic' },
+  'bs.analytics.m3':         { zh: '社群擴散', en: 'Social Amplification' },
+  'bs.acc1.title':           { zh: '範例：透過優化頁面停留時間提升轉換率', en: 'Example: Increasing Conversion by Optimizing Time on Page' },
+  'bs.acc1.p.label':         { zh: '發現的問題', en: 'Problem Identified' },
+  'bs.acc1.p.text':          { zh: 'GA4 數據顯示，產品頁面的平均停留時間僅有 <strong>35 秒</strong>——低於達成轉換所需的 90–120 秒關鍵門檻。行業基準指出，使用者需要 2–5 分鐘才能建立購買信心。熱力圖顯示內容層次結構不佳，導致使用者錯過關鍵產品資訊而提前離開。', en: 'GA4 data showed average time on product pages was only <strong>35 seconds</strong> — below the critical 90–120 second threshold needed for conversion. Industry benchmarks show users need 2–5 minutes to build purchase confidence. Heat maps revealed poor content hierarchy causing users to miss key product information and leave prematurely.' },
+  'bs.acc1.h.label':         { zh: '假設與測試', en: 'Hypothesis & Testing' },
+  'bs.acc1.h.placeholder':   { zh: '數據卡片補充中...', en: 'Data cards coming soon...' },
+  'bs.acc1.r.label':         { zh: '成果與迭代', en: 'Results & Iteration' },
+  'bs.acc1.r.text':          { zh: '新版排版將平均頁面停留時間從 35 秒提升至 <strong>2 分 18 秒</strong>——正式進入最佳轉換窗口。使用者有充分時間吸收產品資訊並建立購買信心，轉換率提升 <strong>67%</strong>。持續監控以確保互動時間維持在 2–5 分鐘的甜蜜點，避免超過 10 分鐘造成決策疲勞。', en: 'New layout increased average time on page from 35 seconds to <strong>2 minutes 18 seconds</strong> — entering the optimal conversion window. Users now had sufficient time to absorb product information and build purchase confidence. This translated to <strong>67% improvement</strong> in conversion rate. Continued monitoring to ensure engagement stayed within the 2–5 minute sweet spot, avoiding decision fatigue beyond 10 minutes.' },
+
   // 機會與策略大標題
   'bs.opp.title':    { zh: '六個機會，以及我如何回應它們', en: 'Six Opportunities & How I Addressed Them' },
   'vvis.opp.title':  { zh: '五個機會，以及我如何回應它們', en: 'Five Opportunities & How I Addressed Them' },
