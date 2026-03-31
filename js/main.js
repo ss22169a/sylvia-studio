@@ -2,6 +2,16 @@
 // Sylvia Studio - Main JavaScript
 // =============================================
 
+// --- Theme: apply saved or system preference before paint ---
+(function () {
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // --- Navigation scroll effect ---
@@ -98,6 +108,17 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // --- Theme Toggle ---
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  }
 
   // --- Analytics Accordion ---
   document.querySelectorAll('.acc-header').forEach(header => {

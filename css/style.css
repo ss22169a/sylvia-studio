@@ -1321,3 +1321,118 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* =============================================
+   THEME TOGGLE BUTTON
+   ============================================= */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-black);
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.nav.scrolled .theme-toggle { color: var(--color-white); }
+.nav.scrolled .theme-toggle:hover { background: var(--color-white); color: var(--color-black); }
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+/* =============================================
+   DARK MODE
+   ============================================= */
+
+/* Smooth color transitions on theme switch */
+body, .nav, .dropdown__inner, .card, .skills-card,
+.flip-card__front, .competency-item, .tag, .contact-link,
+.work-item, .btn-primary, .btn-secondary {
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Variable overrides — affects any rule that uses these vars */
+[data-theme="dark"] {
+  --color-gray-light: #252525;
+  --color-gray-mid:   #2d2d2d;
+  --color-gray-dark:  #aaaaaa;
+  --color-gray-text:  #777777;
+}
+
+/* Base */
+[data-theme="dark"] body { background: #111111; color: #f0f0ee; }
+
+/* Nav — before scroll (transparent bg → need light text on dark page) */
+[data-theme="dark"] .nav__logo  { color: #f0f0ee; }
+[data-theme="dark"] a.nav__link { color: #f0f0ee; }
+[data-theme="dark"] .hamburger span { background: #f0f0ee; }
+[data-theme="dark"] .lang-toggle  { color: #f0f0ee; border-color: rgba(255,255,255,0.25); }
+[data-theme="dark"] .lang-toggle:hover { background: #f0f0ee; color: #111; }
+[data-theme="dark"] .nav__cta  { color: #f0f0ee; border-color: rgba(255,255,255,0.25); }
+[data-theme="dark"] .nav__cta:hover { background: #f0f0ee; color: #111; }
+[data-theme="dark"] .theme-toggle { color: #f0f0ee; border-color: rgba(255,255,255,0.25); }
+[data-theme="dark"] .theme-toggle:hover { background: #f0f0ee; color: #111; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun  { display: block; }
+
+/* Nav — after scroll (bg stays var(--color-black) = #000 — already dark ✓) */
+[data-theme="dark"] .nav.scrolled .theme-toggle { color: #f0f0ee; border-color: rgba(255,255,255,0.25); }
+[data-theme="dark"] .nav.scrolled .theme-toggle:hover { background: #f0f0ee; color: #111; }
+
+/* Dropdown */
+[data-theme="dark"] .dropdown__inner {
+  background: #1a1a1a;
+  border-color: #2a2a2a;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+[data-theme="dark"] .dropdown__item { color: #f0f0ee; border-bottom-color: #2a2a2a; }
+[data-theme="dark"] .dropdown__item:hover { background: #222; padding-left: 28px; }
+
+/* Hero */
+[data-theme="dark"] .hero__title { color: #f0f0ee; }
+
+/* Buttons */
+[data-theme="dark"] .btn-primary  { background: #f0f0ee; color: #111; }
+[data-theme="dark"] .btn-secondary { border-color: rgba(255,255,255,0.3); color: #f0f0ee; }
+[data-theme="dark"] .btn-secondary:hover { background: #f0f0ee; color: #111; }
+
+/* Section */
+[data-theme="dark"] .section__title     { color: #f0f0ee; }
+[data-theme="dark"] .project-hero__title,
+[data-theme="dark"] .project-hero__meta { color: #f0f0ee; }
+
+/* Flip cards — front face */
+[data-theme="dark"] .flip-card__label   { color: #f0f0ee; }
+[data-theme="dark"] .flip-card__number  { color: #2e2e2e; }
+
+/* Skills */
+[data-theme="dark"] .skills-card:hover { border-color: rgba(255,255,255,0.35); }
+
+/* section--dark + footer + mobile-menu use var(--color-black)=#000 → stay dark ✓ */
+/* Force background in case of any cascading issue */
+[data-theme="dark"] .section--dark { background: #000; }
+
+/* Competency grid cells (background was var(--color-white) = #fff → must flip) */
+[data-theme="dark"] .competency-item { background: #111; }
+[data-theme="dark"] .competency-item:hover { background: #f0f0ee; color: #111; }
+[data-theme="dark"] .competency-item:hover .competency-item__num  { color: rgba(0,0,0,0.4); }
+[data-theme="dark"] .competency-item:hover .competency-item__body { color: rgba(0,0,0,0.7); }
+
+/* Contact */
+[data-theme="dark"] .contact-link { color: #f0f0ee; }
+
+/* Work items */
+[data-theme="dark"] .work-item { background: #1a1a1a; }
