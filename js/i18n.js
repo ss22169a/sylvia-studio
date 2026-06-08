@@ -7,8 +7,8 @@ const TRANSLATIONS = {
 
   // ── Navigation ──────────────────────────────
   'nav.about':      { zh: '關於我',    en: 'About' },
-  'nav.resume':     { zh: '履歷',      en: 'Resume' },
-  'nav.projects':   { zh: '參與專案', en: 'Projects' },
+  'nav.resume':     { zh: '工作經歷',  en: 'Experience' },
+  'nav.projects':   { zh: '參與專案 ▾', en: 'Projects ▾' },
   'nav.work':       { zh: '工作經歷 ▾', en: 'Experience ▾' },
   'nav.secux':      { zh: 'SecuX 科技', en: 'SecuX Tech' },
   'nav.oloo':       { zh: 'oloo 電動滑板車', en: 'oloo - shared mobility' },
@@ -17,7 +17,7 @@ const TRANSLATIONS = {
 
   // ── Mobile Menu ─────────────────────────────
   'mobile.about':   { zh: '關於我',    en: 'About' },
-  'mobile.resume':  { zh: '履歷',      en: 'Resume' },
+  'mobile.resume':  { zh: '工作經歷',  en: 'Experience' },
   'mobile.contact': { zh: "Let's Talk", en: "Let's Talk" },
 
   // ── Footer ──────────────────────────────────
