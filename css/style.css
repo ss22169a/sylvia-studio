@@ -309,7 +309,7 @@ ul {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s;
-  padding: calc(var(--nav-height) + 16px) 20px 88px;
+  padding: calc(var(--nav-height) + 16px) 20px 120px;
 }
 
 .mobile-menu.open {
@@ -362,7 +362,7 @@ ul {
 
 .mobile-menu__controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
