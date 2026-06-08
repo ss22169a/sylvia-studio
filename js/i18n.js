@@ -329,6 +329,7 @@ function initI18n() {
     const next = getLang() === 'zh' ? 'en' : 'zh';
     setLang(next);
     applyTranslations(next);
+    document.dispatchEvent(new CustomEvent('langChange'));
   }
 
   const btn = document.getElementById('lang-toggle');

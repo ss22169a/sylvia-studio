@@ -120,121 +120,63 @@
     </div>
   </div>
 
-  <!-- Featured Work -->
-  <div class="section--works">
-    <div class="section--works__header">
-
-      <h2 class="section__title reveal reveal-delay-1" data-i18n="index.work.title">精選作品</h2>
+  <!-- Featured Works Showcase -->
+  <section class="ws-wrap">
+    <div class="ws-wrap__header">
+      <h2 class="section__title reveal" data-i18n="index.work.title">精選作品</h2>
     </div>
 
-    <div class="works-list">
-
-      <a href="work/blank-space.html" class="work-entry reveal">
-        <div class="work-entry__head">
-          <span class="work-entry__num">01</span>
-          <div class="work-entry__info">
-            <h3 class="work-entry__title">BLANK SPACE</h3>
-            <p class="work-entry__role">Co-Founder & Marketing Lead · 2020–2024</p>
+    <div class="ws">
+      <!-- Left: sticky preview -->
+      <div class="ws__left">
+        <div class="ws-preview" id="wsPreview">
+          <a id="wsPreviewLink" href="work/blank-space.html" class="ws-preview__img-wrap">
+            <img id="wsPreviewImg"
+              src="https://sylviaho.co/cdn/shop/files/Rectangle_1402_18969232-0d7d-49b4-bff0-c6675a72df53.jpg?v=1766763222&width=1400"
+              alt="BLANK SPACE" class="ws-preview__img" loading="lazy" />
+          </a>
+          <div class="ws-preview__meta">
+            <div class="ws-meta__row">
+              <p class="ws-meta__label">Overview</p>
+              <p class="ws-meta__text" id="wsPreviewOverview">共同創辦人。從零建立品牌，擴展至台灣五家實體門市，全程主導品牌定位、獲客策略與視覺識別。</p>
+            </div>
+            <div class="ws-meta__row">
+              <p class="ws-meta__label">Tags</p>
+              <p class="ws-meta__text" id="wsPreviewTags">Brand Strategy · Go-to-Market · Omnichannel Growth</p>
+            </div>
           </div>
-          <span class="work-entry__cta" aria-hidden="true">查看案例 →</span>
         </div>
-        <div class="work-entry__img-wrap">
-          <img src="https://sylviaho.co/cdn/shop/files/Rectangle_1402_18969232-0d7d-49b4-bff0-c6675a72df53.jpg?v=1766763222&width=1400" alt="BLANK SPACE" class="work-entry__img" loading="lazy" />
-        </div>
-        <div class="work-entry__tags">
-          <span class="work-entry__tag">Brand Strategy</span>
-          <span class="work-entry__tag">Go-to-Market</span>
-          <span class="work-entry__tag">Omnichannel Growth</span>
-          <span class="work-entry__tag">Team Leadership</span>
-        </div>
-      </a>
+      </div>
 
-      <a href="work/vvis-studio.html" class="work-entry reveal">
-        <div class="work-entry__head">
-          <span class="work-entry__num">02</span>
-          <div class="work-entry__info">
-            <h3 class="work-entry__title">vvis.studio</h3>
-            <p class="work-entry__role">Web Operations & Marketing Lead · 2025</p>
-          </div>
-          <span class="work-entry__cta" aria-hidden="true">查看案例 →</span>
+      <!-- Right: scrollable title list -->
+      <div class="ws__right">
+        <div class="ws-item active" data-index="0">
+          <span class="ws-item__year">2020–2024</span>
+          <a href="work/blank-space.html" class="ws-item__title">BLANK SPACE</a>
         </div>
-        <div class="work-entry__img-wrap">
-          <img src="https://sylviaho.co/cdn/shop/files/Rectangle_158.jpg?v=1769794586&width=1400" alt="vvis.studio" class="work-entry__img" loading="lazy" />
+        <div class="ws-item" data-index="1">
+          <span class="ws-item__year">2025</span>
+          <a href="work/vvis-studio.html" class="ws-item__title">vvis.studio</a>
         </div>
-        <div class="work-entry__tags">
-          <span class="work-entry__tag">Shopify Development</span>
-          <span class="work-entry__tag">SEO Strategy</span>
-          <span class="work-entry__tag">Content Architecture</span>
-          <span class="work-entry__tag">B2B Lead Generation</span>
+        <div class="ws-item" data-index="2">
+          <span class="ws-item__year">2025</span>
+          <a href="work/secux.html" class="ws-item__title" data-i18n="nav.secux">SecuX 科技</a>
         </div>
-      </a>
-
-      <a href="work/secux.html" class="work-entry reveal">
-        <div class="work-entry__head">
-          <span class="work-entry__num">03</span>
-          <div class="work-entry__info">
-            <h3 class="work-entry__title">SecuX 科技</h3>
-            <p class="work-entry__role">Project Manager · 2025</p>
-          </div>
-          <span class="work-entry__cta" aria-hidden="true">查看案例 →</span>
+        <div class="ws-item" data-index="3">
+          <span class="ws-item__year">2025</span>
+          <a href="work/tellus-materials.html" class="ws-item__title">Tellus Materials</a>
         </div>
-        <div class="work-entry__img-wrap">
-          <img src="https://sylviaho.co/cdn/shop/files/Group_92.jpg?v=1771613602&width=1400" alt="SecuX 科技" class="work-entry__img" loading="lazy" />
+        <div class="ws-item" data-index="4">
+          <span class="ws-item__year">2022–2023</span>
+          <a href="work/oloo.html" class="ws-item__title" data-i18n="nav.oloo">oloo 電動滑板車</a>
         </div>
-        <div class="work-entry__tags">
-          <span class="work-entry__tag">Project Management</span>
-          <span class="work-entry__tag">Go-to-Market Strategy</span>
-          <span class="work-entry__tag">International Marketing</span>
-          <span class="work-entry__tag">Performance Analytics</span>
-        </div>
-      </a>
-
-      <a href="work/tellus-materials.html" class="work-entry reveal">
-        <div class="work-entry__head">
-          <span class="work-entry__num">04</span>
-          <div class="work-entry__info">
-            <h3 class="work-entry__title">Tellus Materials</h3>
-            <p class="work-entry__role">Web Operations & Marketing Lead · 2025</p>
-          </div>
-          <span class="work-entry__cta" aria-hidden="true">查看案例 →</span>
-        </div>
-        <div class="work-entry__img-wrap">
-          <img src="https://sylviaho.co/cdn/shop/files/Rectangle_242_1d634d9e-13d7-458f-be9a-657231b3d070.jpg?v=1&width=1400" alt="Tellus Materials" class="work-entry__img" loading="lazy" />
-        </div>
-        <div class="work-entry__tags">
-          <span class="work-entry__tag">Website Development</span>
-          <span class="work-entry__tag">Content Strategy</span>
-          <span class="work-entry__tag">UI/UX Design</span>
-          <span class="work-entry__tag">SEO Optimization</span>
-        </div>
-      </a>
-
-      <a href="work/oloo.html" class="work-entry reveal">
-        <div class="work-entry__head">
-          <span class="work-entry__num">05</span>
-          <div class="work-entry__info">
-            <h3 class="work-entry__title">oloo 電動滑板車</h3>
-            <p class="work-entry__role">Project Manager & Market Development</p>
-          </div>
-          <span class="work-entry__cta" aria-hidden="true">查看案例 →</span>
-        </div>
-        <div class="work-entry__img-wrap">
-          <img src="https://sylviaho.co/cdn/shop/files/Group_91.jpg?v=1771625375&width=1400" alt="oloo 電動滑板車" class="work-entry__img" loading="lazy" />
-        </div>
-        <div class="work-entry__tags">
-          <span class="work-entry__tag">Market Development</span>
-          <span class="work-entry__tag">Campus Partnerships</span>
-          <span class="work-entry__tag">Brand Storytelling</span>
-          <span class="work-entry__tag">Community Building</span>
-        </div>
-      </a>
-
+      </div>
     </div>
 
-    <div style="text-align:center; margin-top:60px; padding:0 40px;">
+    <div class="ws-wrap__footer">
       <a href="resume.html" class="btn-secondary" data-i18n="index.work.resume">查看完整履歷</a>
     </div>
-  </div>
+  </section>
 
   <!-- CTA -->
   <div class="section" style="text-align:center;">
