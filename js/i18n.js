@@ -180,7 +180,7 @@ const TRANSLATIONS = {
   // ── Tellus Materials Page ───────────────────
   'tellus.meta':  { zh: 'Tellus Materials · 網站營運 & 行銷主導 · 2025–Present', en: 'Tellus Materials · Web Operations & Marketing Lead · 2025–Present' },
   'tellus.title': { zh: '從零建立<br>B2B 技術網站', en: 'Building a B2B Technical Website<br>from the Ground Up' },
-  'tellus.overview.title': { zh: '擔任綠氫科技新創公司的唯一數位主導', en: 'Sole Digital Lead for a Green Hydrogen Technology Startup' },
+  'tellus.overview.title': { zh: '擔任綠能科技公司的數位行銷', en: 'Digital Marketing for a Green Energy Tech Company' },
   'tellus.overview.p1': { zh: '以唯一網站營運負責人的身分，在 Tellus Materials 建立並管理這家綠氫科技新創公司的完整數位形象。全權負責網站架構、技術內容創作、行銷活動與 EDM 發送——同時並行處理 10+ 個專案。', en: 'As sole Website Operations Lead at Tellus Materials, I built and managed the entire digital presence for a green hydrogen technology startup. I owned website architecture, created all technical content, developed marketing campaigns, and managed EDM distribution — across 10+ concurrent projects.' },
   'tellus.overview.p2': { zh: '核心挑戰在於：讓非技術背景的 B2B 決策者能理解複雜的氫能技術，同時在競爭激烈的全球市場中建立品牌權威。', en: 'The challenge was making complex hydrogen technology understandable for non-expert B2B decision-makers, while simultaneously establishing brand authority in a competitive global market.' },
   'tellus.c1.label': { zh: '技術內容親民化', en: 'Technical Accessibility' },
