@@ -97,7 +97,7 @@ const TRANSLATIONS = {
 
   // ── Resume Page (extended) ───────────────────
   'resume.desc':     { zh: '我的核心專長是理解限制條件、整合團隊，並將複雜問題轉化為清晰、可執行的解決方案。', en: 'My focus is understanding constraints, aligning teams, and turning complexity into clear, executable solutions.' },
-  'resume.download': { zh: '下載 PDF 履歷 ↗', en: 'Download PDF Resume ↗' },
+  'resume.download': { zh: '領取 PDF 履歷', en: 'Get PDF Resume' },
   'resume.exp.label': { zh: '工作經歷', en: 'Experience' },
   'resume.exp.title': { zh: '橫跨產品、設計與行銷團隊的<br>實戰經驗', en: "I've worked hands-on across product,<br>design, and marketing teams" },
   'resume.t1.role': { zh: '品牌策略與行銷企劃', en: 'Brand Strategy & Campaign Planning' },
