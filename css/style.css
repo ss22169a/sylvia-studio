@@ -99,7 +99,8 @@ ul {
   color: var(--color-white);
 }
 
-.nav.scrolled .hamburger span {
+.nav.scrolled .hamburger span,
+.hamburger.open span {
   background: var(--color-white);
 }
 
@@ -267,6 +268,9 @@ ul {
   gap: 5px;
   cursor: pointer;
   padding: 8px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .hamburger span {
@@ -274,7 +278,18 @@ ul {
   width: 24px;
   height: 2px;
   background: var(--color-black);
-  transition: var(--transition);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile menu */
