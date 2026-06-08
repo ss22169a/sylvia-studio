@@ -373,7 +373,7 @@ ul {
 .mobile-work-label {
   font-size: clamp(24px, 6vw, 40px);
   font-weight: 700;
-  color: rgba(0,0,0,0.35);
+  color: var(--color-black);
   letter-spacing: -0.01em;
   cursor: default;
   text-align: left;
@@ -389,8 +389,12 @@ ul {
 .mobile-sub a {
   font-size: clamp(14px, 3.5vw, 18px) !important;
   font-weight: 400 !important;
-  opacity: 0.6;
+  opacity: 1;
 }
+
+/* Dark mode：參與專案 label 和子項目保持淡色 */
+[data-theme="dark"] .mobile-work-label { color: rgba(255,255,255,0.9); }
+[data-theme="dark"] .mobile-sub a { opacity: 0.6; }
 
 /* =============================================
    HERO SECTION
@@ -1799,7 +1803,6 @@ body, .nav, .dropdown__inner, .card, .skills-card,
 /* Mobile menu — dark mode */
 [data-theme="dark"] .mobile-menu { background: #111; }
 [data-theme="dark"] .mobile-menu a { color: #f0f0ee; }
-[data-theme="dark"] .mobile-work-label { color: rgba(255,255,255,0.9); }
 [data-theme="dark"] .hamburger.open span { background: #f0f0ee; }
 [data-theme="dark"] .lang-toggle--mobile { border-color: rgba(255,255,255,0.4); color: #f0f0ee; }
 [data-theme="dark"] .theme-toggle--mobile .theme-toggle__track { border-color: rgba(255,255,255,0.5); }
