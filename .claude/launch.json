@@ -4,7 +4,7 @@
     {
       "name": "portfolio",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "3333", "--directory", "/Users/sylvia/Downloads/Sylvia/portfolio-site"],
+      "runtimeArgs": ["-m", "http.server", "3333", "--directory", "/Users/sylvia/Downloads/Sylvia/.claude/worktrees/nervous-northcutt"],
       "port": 3333
     }
   ]

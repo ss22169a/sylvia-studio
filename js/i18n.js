@@ -323,15 +323,18 @@ function initI18n() {
   const lang = getLang();
   applyTranslations(lang);
 
-  const btn = document.getElementById('lang-toggle');
-  if (btn) {
-    btn.addEventListener('click', () => {
-      const current = getLang();
-      const next = current === 'zh' ? 'en' : 'zh';
-      setLang(next);
-      applyTranslations(next);
-    });
+  function toggleLang() {
+    const next = getLang() === 'zh' ? 'en' : 'zh';
+    setLang(next);
+    applyTranslations(next);
   }
+
+  const btn = document.getElementById('lang-toggle');
+  if (btn) btn.addEventListener('click', toggleLang);
+
+  document.querySelectorAll('.lang-toggle--mobile').forEach(el => {
+    el.addEventListener('click', toggleLang);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', initI18n);
