@@ -1547,7 +1547,7 @@ body, .nav, .dropdown__inner, .card, .skills-card,
 
 /* Nav — before scroll (transparent bg → need light text on dark page) */
 [data-theme="dark"] .nav__logo  { color: #f0f0ee; }
-[data-theme="dark"] a.nav__link { color: #f0f0ee; }
+[data-theme="dark"] .nav__link { color: #f0f0ee; }
 [data-theme="dark"] .hamburger span { background: #f0f0ee; }
 [data-theme="dark"] .lang-toggle  { color: #f0f0ee; border-color: rgba(255,255,255,0.25); }
 [data-theme="dark"] .lang-toggle:hover { background: #f0f0ee; color: #111; }
