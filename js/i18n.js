@@ -298,6 +298,41 @@ function setLang(lang) {
   localStorage.setItem('sylvia-lang', lang);
 }
 
+var TAG_ZH = {
+  'Brand Strategy':            '品牌策略',
+  'Go-to-Market':              '進入市場策略',
+  'Go-to-Market Strategy':     '進入市場策略',
+  'Omnichannel Growth':        '全通路成長',
+  'Team Leadership':           '團隊領導',
+  'Visual Identity':           '視覺識別',
+  'Customer Acquisition':      '顧客獲取',
+  'E-commerce':                '電商',
+  'Retail Expansion':          '實體零售擴張',
+  'Shopify Development':       'Shopify 開發',
+  'SEO Strategy':              'SEO 策略',
+  'SEO Optimization':          'SEO 優化',
+  'UI/UX Design':              'UI/UX 設計',
+  'Content Architecture':      '內容架構',
+  'Content Strategy':          '內容策略',
+  'Email Marketing':           'EDM 行銷',
+  'EDM Campaigns':             'EDM 行銷活動',
+  'B2B Lead Generation':       'B2B 潛客開發',
+  'Project Management':        '專案管理',
+  'International Marketing':   '國際行銷',
+  'E-commerce Optimization':   '電商優化',
+  'Performance Analytics':     '績效分析',
+  'Data Analytics':            '數據分析',
+  'Website Development':       '網站建置',
+  'Marketing Planning':        '行銷規劃',
+  'Sitemap Architecture':      '網站架構規劃',
+  'Market Development':        '市場開發',
+  'Campus Partnerships':       '校園合作',
+  'Community Building':        '社群建立',
+  'Event Marketing':           '活動行銷',
+  'Brand Storytelling':        '品牌敘事',
+  'Cross-functional Leadership':'跨部門領導'
+};
+
 function applyTranslations(lang) {
   document.documentElement.lang = lang === 'zh' ? 'zh-TW' : 'en';
 
@@ -309,6 +344,14 @@ function applyTranslations(lang) {
     if (text === undefined) return;
     // Use innerHTML to support <br> tags
     el.innerHTML = text;
+  });
+
+  // Translate .tag elements
+  document.querySelectorAll('.tag').forEach(el => {
+    if (!el.dataset.en) el.dataset.en = el.textContent.trim();
+    el.textContent = lang === 'zh'
+      ? (TAG_ZH[el.dataset.en] || el.dataset.en)
+      : el.dataset.en;
   });
 
   // Update toggle button label
