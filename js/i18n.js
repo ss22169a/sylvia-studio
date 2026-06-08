@@ -9,6 +9,8 @@ const TRANSLATIONS = {
   'nav.about':      { zh: '關於我',    en: 'About' },
   'nav.resume':     { zh: '履歷',      en: 'Resume' },
   'nav.work':       { zh: '工作經歷 ▾', en: 'Experience ▾' },
+  'nav.secux':      { zh: 'SecuX 科技', en: 'SecuX Tech' },
+  'nav.oloo':       { zh: 'oloo 電動滑板車', en: 'oloo - shared mobility' },
   'nav.contact':    { zh: "Let's Talk", en: "Let's Talk" },
   'nav.lang':       { zh: 'EN',        en: '中文' },
 
