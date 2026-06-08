@@ -99,8 +99,7 @@ ul {
   color: var(--color-white);
 }
 
-.nav.scrolled .hamburger span,
-.hamburger.open span {
+.nav.scrolled .hamburger span {
   background: var(--color-white);
 }
 
@@ -300,16 +299,16 @@ ul {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: var(--color-black);
+  background: var(--color-white);
   z-index: 999;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 18px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s;
-  padding: calc(var(--nav-height) + 16px) 20px 120px;
+  padding: calc(var(--nav-height) + 16px) 40px 120px;
 }
 
 .mobile-menu.open {
@@ -320,9 +319,10 @@ ul {
 .mobile-menu a {
   font-size: clamp(24px, 6vw, 40px);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-black);
   letter-spacing: -0.01em;
   transition: opacity 0.3s;
+  text-align: left;
 }
 
 .mobile-menu a:hover {
@@ -330,7 +330,7 @@ ul {
 }
 
 .theme-toggle--mobile .theme-toggle__track {
-  border-color: rgba(255,255,255,0.5);
+  border-color: rgba(0,0,0,0.3);
   width: 48px;
   height: 28px;
 }
@@ -338,7 +338,7 @@ ul {
 .theme-toggle--mobile .theme-toggle__thumb {
   width: 18px;
   height: 18px;
-  background: var(--color-white);
+  background: var(--color-black);
 }
 
 [data-theme="dark"] .theme-toggle--mobile .theme-toggle__thumb {
@@ -350,9 +350,9 @@ ul {
   align-items: center;
   gap: 6px;
   background: none;
-  border: 1.5px solid rgba(255,255,255,0.4);
+  border: 1.5px solid rgba(0,0,0,0.25);
   border-radius: 100px;
-  color: var(--color-white);
+  color: var(--color-black);
   padding: 6px 14px;
   cursor: pointer;
   font-size: 13px;
@@ -363,8 +363,7 @@ ul {
 .mobile-menu__controls {
   position: absolute;
   bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -374,15 +373,16 @@ ul {
 .mobile-work-label {
   font-size: clamp(24px, 6vw, 40px);
   font-weight: 700;
-  color: rgba(255,255,255,0.35);
+  color: rgba(0,0,0,0.35);
   letter-spacing: -0.01em;
   cursor: default;
+  text-align: left;
 }
 
 .mobile-sub {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -1796,8 +1796,16 @@ body, .nav, .dropdown__inner, .card, .skills-card,
 /* Skills */
 [data-theme="dark"] .skills-card:hover { border-color: rgba(255,255,255,0.35); }
 
-/* section--dark + footer + mobile-menu use var(--color-black)=#000 → stay dark ✓ */
-/* Force background in case of any cascading issue */
+/* Mobile menu — dark mode */
+[data-theme="dark"] .mobile-menu { background: #111; }
+[data-theme="dark"] .mobile-menu a { color: #f0f0ee; }
+[data-theme="dark"] .mobile-work-label { color: rgba(255,255,255,0.9); }
+[data-theme="dark"] .hamburger.open span { background: #f0f0ee; }
+[data-theme="dark"] .lang-toggle--mobile { border-color: rgba(255,255,255,0.4); color: #f0f0ee; }
+[data-theme="dark"] .theme-toggle--mobile .theme-toggle__track { border-color: rgba(255,255,255,0.5); }
+[data-theme="dark"] .theme-toggle--mobile .theme-toggle__thumb { background: #f0f0ee; }
+
+/* section--dark + footer */
 [data-theme="dark"] .section--dark { background: #000; }
 
 /* Competency grid cells (background was var(--color-white) = #fff → must flip) */
