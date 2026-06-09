@@ -180,9 +180,10 @@ const TRANSLATIONS = {
   // ── Tellus Materials Page ───────────────────
   'tellus.meta':  { zh: 'Tellus Materials · 網站營運 & 行銷主導 · 2025–Present', en: 'Tellus Materials · Web Operations & Marketing Lead · 2025–Present' },
   'tellus.title': { zh: '從零建立<br>B2B 技術網站', en: 'Building a B2B Technical Website<br>from the Ground Up' },
-  'tellus.overview.title': { zh: '擔任綠能科技公司的數位行銷', en: 'Digital Marketing for a Green Energy Tech Company' },
-  'tellus.overview.p1': { zh: '以唯一網站營運負責人的身分，在 Tellus Materials 建立並管理這家綠氫科技新創公司的完整數位形象。全權負責網站架構、技術內容創作、行銷活動與 EDM 發送——同時並行處理 10+ 個專案。', en: 'As sole Website Operations Lead at Tellus Materials, I built and managed the entire digital presence for a green hydrogen technology startup. I owned website architecture, created all technical content, developed marketing campaigns, and managed EDM distribution — across 10+ concurrent projects.' },
-  'tellus.overview.p2': { zh: '核心挑戰在於：讓非技術背景的 B2B 決策者能理解複雜的氫能技術，同時在競爭激烈的全球市場中建立品牌權威。', en: 'The challenge was making complex hydrogen technology understandable for non-expert B2B decision-makers, while simultaneously establishing brand authority in a competitive global market.' },
+  'tellus.overview.title': { zh: '主導綠能科技新創的數位行銷與網站營運', en: 'Leading Digital Marketing & Web Operations for a Green Energy Startup' },
+  'tellus.overview.p1': { zh: '作為 Tellus Materials 唯一的網站營運與行銷負責人，我從零建立並管理這家綠氫科技新創的完整數位形象。', en: 'As the sole website operations and marketing lead at Tellus Materials, I built and managed the entire digital presence of this green hydrogen technology startup from the ground up.' },
+  'tellus.overview.p2': { zh: '全權主導網站架構、技術內容策略、行銷活動與跨國 EDM 漏斗，並具備同時並行處理多個產品策劃與敏捷的管理能力。', en: 'I owned website architecture, technical content strategy, marketing campaigns, and cross-border EDM funnels — managing multiple concurrent product initiatives with agility.' },
+  'tellus.overview.p3': { zh: '核心挑戰是如何將艱澀、複雜的氫能技術「轉譯」為 B2B 決策者能快速理解的商業語言，並在競爭激烈的全球市場中，為在地新創建立可信的品牌權威。', en: 'The core challenge was translating complex hydrogen technology into business language that B2B decision-makers could quickly grasp — while building credible brand authority for a local startup in a fiercely competitive global market.' },
   'tellus.c1.label': { zh: '技術內容親民化', en: 'Technical Accessibility' },
   'tellus.c1.q':     { zh: '我們如何讓非技術背景的 B2B 決策者也能理解複雜的氫能技術？', en: "How might we make complex hydrogen technology understandable for B2B decision-makers who aren't technical experts?" },
   'tellus.c1.text':  { zh: '導入三層次內容策略：為決策者提供執行摘要、為評估者提供技術概覽、為工程師提供詳細技術公告——讓氫能技術在各層次都能被理解。', en: 'Implemented a three-tier content strategy: executive summaries for decision-makers, technical overviews for evaluators, and detailed bulletins for engineers — making hydrogen tech accessible at every level.' },
