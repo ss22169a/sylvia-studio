@@ -285,7 +285,7 @@ const TRANSLATIONS = {
   // 機會與策略大標題
   'bs.opp.title':    { zh: '六個機會，以及我如何回應它們', en: 'Six Opportunities & How I Addressed Them' },
   'vvis.opp.title':  { zh: '五個機會，以及我如何回應它們', en: 'Five Opportunities & How I Addressed Them' },
-  'tellus.opp.title':{ zh: '四個機會，以及我如何回應它們', en: 'Four Opportunities & How I Addressed Them' },
+  'tellus.opp.title':{ zh: '四大機會與因應策略', en: 'Four Key Opportunities & Response Strategies' },
   'secux.opp.title': { zh: '機會與策略', en: 'Opportunities & Strategy' },
   'oloo.opp.title':  { zh: '七個機會，以及我如何回應它們', en: 'Seven Opportunities & How I Addressed Them' },
 };
