@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>創意企劃 — Sylvia Ho</title>
+  <meta name="description" content="從產品包裝到視覺落地：高複雜度的商業拍攝企劃與創意統籌" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>!function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.setAttribute('data-theme','dark')}();</script>
+</head>
+<body>
+
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">Sylvia.Studio</a>
+      <ul class="nav__menu">
+        <li class="nav__item"><a href="../about.html" class="nav__link" data-i18n="nav.about">關於我</a></li>
+        <li class="nav__item"><a href="../resume.html" class="nav__link" data-i18n="nav.resume">工作經歷</a></li>
+        <li class="nav__item">
+          <span class="nav__link" data-i18n="nav.projects">參與專案 ▾</span>
+          <div class="dropdown">
+            <div class="dropdown__inner">
+            <a href="blank-space.html" class="dropdown__item">BLANK SPACE</a>
+            <a href="vvis-studio.html" class="dropdown__item">vvis.studio</a>
+            <a href="tellus-materials.html" class="dropdown__item">Tellus Materials</a>
+            <a href="secux.html" class="dropdown__item" data-i18n="nav.secux">SecuX 科技</a>
+            <a href="oloo.html" class="dropdown__item" data-i18n="nav.oloo">oloo 電動滑板車</a>
+            <a href="../project-photography.html" class="dropdown__item">拍攝企劃</a>
+            <a href="creative-production.html" class="dropdown__item" data-i18n="nav.creative">創意企劃</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item nav__item--lang">
+          <button id="lang-toggle" class="lang-toggle" aria-label="切換語言">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="lang-toggle__label">EN</span>
+          </button>
+        </li>
+        <li class="nav__item">
+          <button id="theme-toggle" class="theme-toggle" aria-label="切換日夜模式">
+            <span class="theme-toggle__track"><span class="theme-toggle__thumb"></span></span>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../about.html" data-i18n="mobile.about">關於我</a>
+    <a href="../resume.html" data-i18n="nav.resume">工作經歷</a>
+    <p class="mobile-work-label">參與專案</p>
+    <div class="mobile-sub">
+      <a href="blank-space.html">BLANK SPACE</a>
+      <a href="vvis-studio.html">vvis.studio</a>
+      <a href="tellus-materials.html">Tellus Materials</a>
+      <a href="secux.html" data-i18n="nav.secux">SecuX 科技</a>
+      <a href="oloo.html" data-i18n="nav.oloo">oloo 電動滑板車</a>
+      <a href="../project-photography.html">拍攝企劃</a>
+      <a href="creative-production.html" data-i18n="nav.creative">創意企劃</a>
+    </div>
+    <div class="mobile-menu__controls">
+      <button class="lang-toggle lang-toggle--mobile" aria-label="切換語言">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span class="lang-toggle__label">EN</span>
+      </button>
+      <button class="theme-toggle theme-toggle--mobile" aria-label="切換日夜模式">
+        <span class="theme-toggle__track"><span class="theme-toggle__thumb"></span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Project Hero -->
+  <div class="project-hero">
+    <h1 class="project-hero__title reveal reveal-delay-1">從產品包裝到視覺落地：<br>商業拍攝企劃與創意統籌</h1>
+    <div class="tags reveal reveal-delay-2">
+      <span class="tag">Creative Production</span>
+      <span class="tag">Visual Strategy</span>
+      <span class="tag">Campaign Planning</span>
+      <span class="tag">Cross-functional Coordination</span>
+      <span class="tag">Stakeholder Management</span>
+    </div>
+  </div>
+
+  <!-- Hero Image Placeholder -->
+  <div style="max-width:var(--max-width); margin:0 auto; padding:60px 40px 0;">
+    <div class="img-full reveal" style="aspect-ratio:21/9; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:14px; color:var(--color-gray-text);">主視覺圖片</p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="section">
+    <div class="grid-2">
+      <div>
+        <h2 class="section__title reveal reveal-delay-1">從零到一賦予產品視覺靈魂</h2>
+      </div>
+      <div>
+        <p class="section__body reveal reveal-delay-2">
+          優秀的產品需要被精準的視覺包裝。作為商業拍攝企劃，我的核心價值是從零到一賦予產品視覺靈魂。當拿到一項產品，我負責主導整體的視覺包裝策略、衍生拍攝提案，並統籌跨專業團隊將概念完美變現。
+        </p>
+        <p class="section__body reveal reveal-delay-3" style="margin-top:20px;">
+          商業廣告拍攝往往牽一髮而動全身。一次中大型的拍攝專案，動輒涉及 20 至 30 人的跨領域團隊，包含品牌方、攝影、燈光、美術、造型與模特兒。如何在預算與時間的雙重限制下，進行高頻次、高精準度的跨專業協調並消除資訊落差，是決定拍攝成敗的關鍵核心。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Placeholders — Work Samples -->
+  <div style="max-width:var(--max-width); margin:0 auto; padding:0 40px 60px; display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+    <div class="reveal" style="aspect-ratio:4/3; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:13px; color:var(--color-gray-text);">作品圖片 1</p>
+    </div>
+    <div class="reveal reveal-delay-1" style="aspect-ratio:4/3; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:13px; color:var(--color-gray-text);">作品圖片 2</p>
+    </div>
+  </div>
+
+  <!-- Key Results -->
+  <div class="section--dark">
+    <div class="section__inner">
+      <p class="section__label reveal">成果</p>
+      <div class="grid-3" style="margin-top:40px;">
+        <div class="reveal">
+          <p style="font-size:clamp(48px,6vw,80px); font-weight:700; letter-spacing:-0.04em; color:#fff;">30+</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:8px;">跨專業協調人數</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.7);">跨專業劇組高效協調與統籌</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p style="font-size:clamp(48px,6vw,80px); font-weight:700; letter-spacing:-0.04em; color:#fff;">100%</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:8px;">視覺精準還原度</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.7);">策略提案到最終視覺呈現的精準還原</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p style="font-size:clamp(48px,6vw,80px); font-weight:700; letter-spacing:-0.04em; color:#fff;">0</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:8px;">現場誤差</p>
+          <p style="font-size:14px; color:rgba(255,255,255,0.7);">標準化拍前會議工作流，降低現場溝通成本</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opportunities & Strategy -->
+  <div class="section--dark">
+    <div class="section__inner">
+      <p class="section__label reveal">機會與策略</p>
+      <h2 class="section__title reveal reveal-delay-1" style="color:#fff; margin-bottom:60px;">四大機會與因應策略</h2>
+
+      <div class="flip-cards">
+
+        <div class="flip-card reveal">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <span class="flip-card__number">01</span>
+              <p class="flip-card__label">產品視覺定位與包裝</p>
+              <p class="flip-card__question">當拿到一項全新的產品，如何挖掘其核心賣點，並在視覺上為其精準包裝、建立具備市場競爭力的美學風格？</p>
+            </div>
+            <div class="flip-card__back">
+              <span class="flip-card__number" style="color:rgba(255,255,255,0.12);">01</span>
+              <p class="flip-card__back flip-card__label" data-i18n="work.approach.back">策略</p>
+              <p class="flip-card__text">深入分析產品受眾與品牌調性，主導視覺策略與風格提案，定調光影、色調與情境構圖，賦予產品清晰的視覺敘事。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card reveal reveal-delay-1">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <span class="flip-card__number">02</span>
+              <p class="flip-card__label">跨專業利害關係人協調</p>
+              <p class="flip-card__question">一場廣告拍攝涉及層面極廣，動輒需要與 20 至 30 人確認內容，如何確保所有專業人員對創意的理解完全一致？</p>
+            </div>
+            <div class="flip-card__back">
+              <span class="flip-card__number" style="color:rgba(255,255,255,0.12);">02</span>
+              <p class="flip-card__back flip-card__label" data-i18n="work.approach.back">策略</p>
+              <p class="flip-card__text">建立嚴謹的拍前確認機制，將抽象的創意方案拆解為美術陳設單、服化造型單、攝影分鏡腳本等具體指令，實現高效的跨界溝通。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card reveal reveal-delay-2">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <span class="flip-card__number">03</span>
+              <p class="flip-card__label">創意提案與專案落地</p>
+              <p class="flip-card__question">如何縮短客戶想像與劇組實際執行之間的認知落差，避免現場翻案或補拍的巨大成本風險？</p>
+            </div>
+            <div class="flip-card__back">
+              <span class="flip-card__number" style="color:rgba(255,255,255,0.12);">03</span>
+              <p class="flip-card__back flip-card__label" data-i18n="work.approach.back">策略</p>
+              <p class="flip-card__text">在提案階段即納入執行可行性評估，精準控管時程與美術道具預算，在有限的拍攝天數中擔任現場的創意決策者，確保畫面完美落地。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card reveal">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <span class="flip-card__number">04</span>
+              <p class="flip-card__label">商業素材產出最大化</p>
+              <p class="flip-card__question">如何在單次的棚拍或外景預算中，為品牌爭取到最多元、最豐富的行銷視覺資產？</p>
+            </div>
+            <div class="flip-card__back">
+              <span class="flip-card__number" style="color:rgba(255,255,255,0.12);">04</span>
+              <p class="flip-card__back flip-card__label" data-i18n="work.approach.back">策略</p>
+              <p class="flip-card__text">在企劃階段超前部署，精算通告表與場景切換節奏，一棚多用，確保單次拍攝能同時滿足電商主圖、社群視覺、形象大片等跨通路的素材需求。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p style="font-size:13px; color:rgba(255,255,255,0.3); margin-top:20px; text-align:center;" data-i18n="work.opp.hint">將滑鼠移至卡片上查看策略</p>
+    </div>
+  </div>
+
+  <!-- More Image Placeholders -->
+  <div style="max-width:var(--max-width); margin:0 auto; padding:60px 40px 0; display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;">
+    <div class="reveal" style="aspect-ratio:1/1; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:13px; color:var(--color-gray-text);">作品圖片 3</p>
+    </div>
+    <div class="reveal reveal-delay-1" style="aspect-ratio:1/1; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:13px; color:var(--color-gray-text);">作品圖片 4</p>
+    </div>
+    <div class="reveal reveal-delay-2" style="aspect-ratio:1/1; background:var(--color-gray-light); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <p style="font-size:13px; color:var(--color-gray-text);">作品圖片 5</p>
+    </div>
+  </div>
+
+  <!-- Nav between projects -->
+  <div style="display:flex; justify-content:flex-start; padding:40px 40px; max-width:var(--max-width); margin:0 auto; border-top:1px solid var(--color-gray-light); margin-top:60px;">
+    <a href="oloo.html" style="font-size:14px; font-weight:600; display:flex; align-items:center; gap:8px;">
+      ← oloo 電動滑板車
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__statement reveal" data-i18n="footer.statement">攜手合作，<br>讓它成真</p>
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Sylvia.Studio</p>
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Sylvia Studio. 版權所有。</p>
+        </div>
+        <div>
+          <p class="footer__nav-title" data-i18n="footer.menu">選單</p>
+          <ul class="footer__nav-list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resume.html">Experience</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title" data-i18n="footer.work">作品</p>
+          <ul class="footer__nav-list">
+            <li><a href="blank-space.html">BLANK SPACE</a></li>
+            <li><a href="vvis-studio.html">vvis.studio</a></li>
+            <li><a href="tellus-materials.html">Tellus Materials</a></li>
+            <li><a href="secux.html">SecuX</a></li>
+            <li><a href="oloo.html">oloo</a></li>
+            <li><a href="creative-production.html">創意企劃</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>

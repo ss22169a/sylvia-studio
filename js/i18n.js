@@ -12,6 +12,7 @@ const TRANSLATIONS = {
   'nav.work':       { zh: '工作經歷 ▾', en: 'Experience ▾' },
   'nav.secux':      { zh: 'SecuX 科技', en: 'SecuX Tech' },
   'nav.oloo':       { zh: 'oloo 電動滑板車', en: 'oloo - shared mobility' },
+  'nav.creative':   { zh: '創意企劃', en: 'Creative Production' },
   'nav.contact':    { zh: "Let's Talk", en: "Let's Talk" },
   'nav.lang':       { zh: 'EN',        en: '中文' },
 
