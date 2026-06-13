@@ -180,7 +180,7 @@ const TRANSLATIONS = {
 
   // ── Tellus Materials Page ───────────────────
   'tellus.meta':  { zh: 'Tellus Materials · 網站營運 & 行銷主導 · 2025–Present', en: 'Tellus Materials · Web Operations & Marketing Lead · 2025–Present' },
-  'tellus.title': { zh: '從零建立<br>B2B 技術網站', en: 'Building a B2B Technical Website<br>from the Ground Up' },
+  'tellus.title': { zh: '儲能與氫能混合動力<br>B2B 跨境行銷：以 MarTech 驅動商機開發', en: 'Energy Storage & Hydrogen Hybrid Power<br>B2B Cross-Border Marketing: MarTech-Driven Lead Generation' },
   'tellus.overview.title': { zh: '主導綠能新創數位營運', en: 'Leading Digital Operations for a Green Energy Startup' },
   'tellus.overview.p1': { zh: '主導 Tellus Materials 綠能科技品牌官網的增長策略與內容規劃。針對儲能櫃與氫能混合動力等高門檻硬體產品，獨立客製化開發 Shopify 網站架構，並導入 AI Agent 自動化分析跨境買家的交互體驗，結合 GA4 MCP（Measurement Protocol）打通線上詢價與線下商務簽約的數據歸因，建立全鏈路的 MarTech 數據基礎建設。', en: 'Led growth strategy and content planning for Tellus Materials\' green energy brand website. Independently developed a custom Shopify architecture for high-barrier hardware products (energy storage cabinets and hydrogen hybrid power), integrating AI Agent analytics for cross-border buyer behavior and GA4 MCP to connect online inquiry with offline contract attribution — establishing full-funnel MarTech infrastructure.' },
   'tellus.overview.p2': { zh: '同時親自操盤全球 B2B 內容行銷，精準翻譯並編寫高技術門檻的綠能規格文案，透過 SEO 關鍵字佈局突破跨國決策迷霧，成功為品牌開拓高價值的海外潛在客戶（Leads）。', en: 'Simultaneously drove global B2B content marketing — translating and writing highly technical green energy specifications, implementing SEO keyword strategy to cut through cross-border decision-making barriers, and successfully generating high-value overseas leads for the brand.' },
