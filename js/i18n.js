@@ -284,8 +284,8 @@ const TRANSLATIONS = {
   'bs.acc1.r.text':          { zh: '新版排版將平均頁面停留時間從 35 秒提升至 <strong>2 分 18 秒</strong>——正式進入最佳轉換窗口。使用者有充分時間吸收產品資訊並建立購買信心，轉換率提升 <strong>67%</strong>。持續監控以確保互動時間維持在 2–5 分鐘的甜蜜點，避免超過 10 分鐘造成決策疲勞。', en: 'New layout increased average time on page from 35 seconds to <strong>2 minutes 18 seconds</strong> — entering the optimal conversion window. Users now had sufficient time to absorb product information and build purchase confidence. This translated to <strong>67% improvement</strong> in conversion rate. Continued monitoring to ensure engagement stayed within the 2–5 minute sweet spot, avoiding decision fatigue beyond 10 minutes.' },
 
   // 機會與策略大標題
-  'bs.opp.title':    { zh: '六個機會，以及我如何回應它們', en: 'Six Opportunities & How I Addressed Them' },
-  'vvis.opp.title':  { zh: '五個機會，以及我如何回應它們', en: 'Five Opportunities & How I Addressed Them' },
+  'bs.opp.title':    { zh: '六大機會與因應策略', en: 'Six Opportunities & How I Addressed Them' },
+  'vvis.opp.title':  { zh: '五大機會與因應策略', en: 'Five Opportunities & How I Addressed Them' },
   'tellus.opp.title':{ zh: '四大機會與因應策略', en: 'Four Key Opportunities & Response Strategies' },
   'secux.opp.title': { zh: '六大機會與因應策略', en: 'Six Key Opportunities & Response Strategies' },
   'oloo.opp.title':  { zh: '七個機會，以及我如何回應它們', en: 'Seven Opportunities & How I Addressed Them' },
