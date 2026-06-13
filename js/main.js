@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         href: 'work/vvis-studio.html',
         img: 'https://sylviaho.co/cdn/shop/files/Rectangle_158.jpg?v=1769794586&width=1400',
-        overview: { zh: '為 B2B 翻譯服務公司建立數位公信力，透過 Shopify 架構、SEO 與 EDM 策略提升品牌能見度與潛在客戶轉換。', en: 'Built digital credibility for a B2B translation firm via Shopify architecture, SEO strategy, and EDM campaigns to grow brand visibility and lead conversion.' },
+        overview: { zh: '獨立負責 Shopify Liquid 客製化開發與前端切版，並操盤 B2B 內容生態與 SEO 佈局，打造高轉換的自動化獲客平台。', en: 'Solely responsible for Shopify Liquid custom development and front-end implementation, while driving B2B content strategy and SEO to build a high-converting automated lead platform.' },
         tags: 'Shopify Development · SEO Strategy · Content Architecture · B2B Lead Generation'
       },
       {

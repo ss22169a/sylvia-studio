@@ -157,7 +157,7 @@ const TRANSLATIONS = {
 
   // ── vvis.studio Page ────────────────────────
   'vvis.meta':  { zh: 'vvis.studio · 網站營運 & 行銷主導 · 2025–Present', en: 'vvis.studio · Web Operations & Marketing Lead · 2025–Present' },
-  'vvis.title': { zh: '透過內容與 EDM 策略<br>提升 B2B 品牌能見度', en: 'Growing B2B Visibility Through<br>Content & EDM Strategy' },
+  'vvis.title': { zh: '跨境官網從 0 到 1 建置與全功能營運', en: 'Building a Cross-Border Website from 0 to 1 & Full Operations' },
   'vvis.overview.title': { zh: '為 B2B 翻譯服務公司建立數位公信力', en: 'Building Digital Credibility for a B2B Translation Services Company' },
   'vvis.overview.p1': { zh: '擔任 vvis.studio 的網站營運與產品策略主導，全權負責從零開始建立並優化這家 B2B 翻譯服務公司的完整數位形象。', en: 'As Website Operations & Product Strategy Lead at vvis.studio, I was accountable for building and optimizing the complete digital presence for a B2B translation services company — from scratch.' },
   'vvis.overview.p2': { zh: '工作內容涵蓋：開發六個垂直產業（能源、半導體、IT、遊戲、醫療、ESG）的專業內容、導入技術關鍵字 SEO 策略、設計中英雙語用戶體驗，以及開發合格的 B2B 潛在客戶。', en: 'The role involved developing industry-specific content across six verticals (Energy, Semiconductor, IT, Gaming, Medical, ESG), implementing SEO strategies for technical keywords, designing bilingual user experiences, and generating qualified B2B leads.' },
