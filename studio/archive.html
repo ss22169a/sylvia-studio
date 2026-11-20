@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Archive — Sylvia's Studio">企劃總覽 — Sylvia's Studio</title>
+  <meta name="description" content="Sylvia's Studio 全部拍攝企劃作品。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/studio.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="archive.html">ARCHIVE</a>
+  <a href="index.html">SYLVIA'S STUDIO</a>
+  <div class="site-header__right">
+    <a href="contact.html">CONTACT</a>
+    <div class="lang" role="group" aria-label="語言 Language">
+      <button type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" style="max-width:1392px;padding-top:80px;padding-bottom:120px">
+  <div class="arc-head">
+    <h1 class="page-title">Archive</h1>
+    <div class="filters" role="group" aria-label="篩選類別">
+      <button type="button" data-cat="all" aria-pressed="true" data-en="ALL">全部</button>
+      <button type="button" data-cat="product" aria-pressed="false" data-en="PRODUCT">產品</button>
+      <button type="button" data-cat="editorial" aria-pressed="false" data-en="EDITORIAL">形象</button>
+      <button type="button" data-cat="ecom" aria-pressed="false" data-en="E-COMMERCE">網拍</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <a href="project.html" class="card" data-cat="editorial"><div class="pic"><img src="img/beach.jpg" alt="海邊人像作品" data-en-alt="Portrait on the beach" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2026</span></div><span class="card__cat" data-en="EDITORIAL">形象</span></a>
+    <a href="project.html" class="card" data-cat="product"><div class="pic"><img src="img/bottles.jpg" alt="海邊三瓶產品" data-en-alt="Three bottles by the sea" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2026</span></div><span class="card__cat" data-en="PRODUCT">產品</span></a>
+    <a href="project.html" class="card" data-cat="product"><div class="pic"><img src="img/balm.jpg" alt="疊石上的護膚棒" data-en-alt="Balm on stacked stones" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2026</span></div><span class="card__cat" data-en="PRODUCT">產品</span></a>
+    <a href="project.html" class="card" data-cat="product"><div class="pic"><img src="img/rock.jpg" alt="岩石上的瓶身" data-en-alt="Bottle on rock" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2026</span></div><span class="card__cat" data-en="PRODUCT">產品</span></a>
+    <a href="project.html" class="card" data-cat="editorial"><div class="pic"><img src="img/gq-duo.jpg" alt="草地雙人雜誌美術設定" data-en-alt="Editorial: duo on grass" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2023</span></div><span class="card__cat" data-en="EDITORIAL">形象</span></a>
+    <a href="project.html" class="card" data-cat="editorial"><div class="pic"><img src="img/gq-apple.jpg" alt="蘋果特寫雜誌美術設定" data-en-alt="Editorial: apple close-up" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2023</span></div><span class="card__cat" data-en="EDITORIAL">形象</span></a>
+    <a href="project.html" class="card" data-cat="editorial"><div class="pic"><img src="img/tote.jpg" alt="手提包人像美術設定" data-en-alt="Editorial: tote bag portrait" loading="lazy" /></div><div class="card__row"><span data-en="Project title">企劃標題假字</span><span class="muted">2023</span></div><span class="card__cat" data-en="EDITORIAL">形象</span></a>
+  </div>
+  <p class="empty" hidden data-en="No projects in this category yet.">這個類別目前還沒有作品。</p>
+</main>
+
+<footer class="site-footer">
+  <span>© SYLVIA'S STUDIO 2026</span>
+  <a href="mailto:hello@studio.com">HELLO@STUDIO.COM</a>
+</footer>
+
+<script src="js/studio.js"></script>
+</body>
+</html>

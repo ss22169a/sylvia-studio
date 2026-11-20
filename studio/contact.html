@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Contact — Sylvia's Studio">聯絡 — Sylvia's Studio</title>
+  <meta name="description" content="與 Sylvia's Studio 聯絡，討論你的下一次拍攝。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/studio.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="archive.html">ARCHIVE</a>
+  <a href="index.html">SYLVIA'S STUDIO</a>
+  <div class="site-header__right">
+    <a href="contact.html">CONTACT</a>
+    <div class="lang" role="group" aria-label="語言 Language">
+      <button type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:96px;padding-bottom:120px">
+  <div class="contact">
+    <div>
+      <h1 class="page-title" data-en="Let's plan<br>your next shoot">一起來企劃<br>下一次拍攝</h1>
+      <p class="body" data-en="Placeholder: how we work together, response time and what to send over. To be replaced.">聯絡說明假字：合作流程、回覆時間與需要提供的資訊。內容待替換。</p>
+      <div class="info">
+        <div><span class="muted">EMAIL</span><a href="mailto:hello@studio.com">hello@studio.com</a></div>
+        <div><span class="muted">PHONE</span><span>+886 0000 000 000</span></div>
+        <div><span class="muted">BASED IN</span><span data-en="Hsinchu, Taiwan">新竹，台灣</span></div>
+        <div><span class="muted">SOCIAL</span><span>Instagram · Behance</span></div>
+      </div>
+    </div>
+
+    <form data-static novalidate>
+      <div class="field"><label for="f-name" data-en="NAME">姓名</label><input id="f-name" name="name" type="text" autocomplete="name" /></div>
+      <div class="field"><label for="f-mail">EMAIL</label><input id="f-mail" name="email" type="email" autocomplete="email" /></div>
+      <div class="field">
+        <label for="f-type" data-en="PROJECT TYPE">拍攝類型</label>
+        <select id="f-type" name="type">
+          <option data-en="Product">產品</option>
+          <option data-en="Editorial / Campaign">形象</option>
+          <option data-en="E-commerce">網拍</option>
+          <option data-en="Other">其他</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg" data-en="MESSAGE">需求說明</label><textarea id="f-msg" name="message" rows="5"></textarea></div>
+      <button type="submit" class="btn" data-en="SEND">送出</button>
+      <p class="form-note body" hidden role="status" data-en="This form isn't connected yet — please email hello@studio.com directly.">表單尚未串接，請直接來信 hello@studio.com。</p>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© SYLVIA'S STUDIO 2026</span>
+  <a href="mailto:hello@studio.com">HELLO@STUDIO.COM</a>
+</footer>
+
+<script src="js/studio.js"></script>
+</body>
+</html>
